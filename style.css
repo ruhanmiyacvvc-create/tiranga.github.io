@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0b0f2a;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #0e153a;
+}
+
+.logo {
+  color: #00ffcc;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #00ffcc;
+  color: #000;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.primary {
+  background: linear-gradient(90deg, #00ffcc, #00ccff);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 20px;
+}
+
+.hero-img {
+  width: 300px;
+}
+
+.games, .features, .download {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.game-grid, .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.game-card {
+  background: #131a4a;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.feature {
+  background: #131a4a;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.download {
+  background: #0e153a;
+}
+
+footer {
+  padding: 20px;
+  background: #000;
+  text-align: center;
+  font-size: 14px;
+}
