@@ -2,27 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Tiranga Games – Play & Earn</title>
+  <title>Tiranga Games – Play & Earn Real Money</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Play games & earn real money with Tiranga Games. Fast withdrawals, secure platform & real cash rewards.">
+  <meta name="keywords" content="Tiranga Games, earn money games, color prediction, crash game">
+  <meta name="author" content="Tiranga Games">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<canvas id="particles"></canvas>
+
 <header class="navbar">
   <div class="logo">Tiranga Games</div>
-  <a class="download-btn">Download App</a>
+  <button class="download-btn" onclick="openModal()">Download App</button>
 </header>
 
 <section class="hero">
-  <div class="hero-text">
-    <h1>Play Games & Earn Real Money</h1>
-    <p>India’s trusted online gaming platform</p>
-    <button class="primary-btn">Get Started</button>
-  </div>
+  <h1>Play Games & Earn Real Money</h1>
+  <p>India’s most trusted gaming platform</p>
+  <button class="primary-btn" onclick="openModal()">Get Started</button>
+</section>
 
-  <div class="hero-image">
-    <img src="https://i.imgur.com/5vRZP0k.png" alt="App Preview">
-  </div>
+<section class="counter">
+  🔔 <span id="withdrawal">₹12,450</span> withdrawn just now
 </section>
 
 <section class="section">
@@ -47,12 +53,23 @@
 <section class="download">
   <h2>Download Tiranga App</h2>
   <p>Available for Android users</p>
-  <button class="primary-btn">Download APK</button>
+  <button class="primary-btn" onclick="openModal()">Download APK</button>
 </section>
 
 <footer>
   © 2026 Tiranga Games. All Rights Reserved.
 </footer>
 
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <h3>Download Tiranga App</h3>
+    <p>Click below to start download</p>
+    <button class="primary-btn">Download Now</button>
+    <span class="close" onclick="closeModal()">✖</span>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
